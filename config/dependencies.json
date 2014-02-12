@@ -1,0 +1,54 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "pallo\\library\\mail\\transport\\Transport",
+            "class": "pallo\\library\\mail\\transport\\MandrillTransport",
+            "id": "mandrill",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "log",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "pallo\\library\\log\\Log"
+                            }
+                        },
+                        {
+                            "name": "apiKey",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.mandrill.apikey"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setDefaultFrom",
+                    "arguments": [
+                        {
+                            "name": "from",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.from"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setDebugTo",
+                    "arguments": [
+                        {
+                            "name": "to",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.debug"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
