@@ -3,6 +3,7 @@
 Set the following configuration to _parameters.json_ in your _config_ directory:
 
     mail.mandrill.apikey = "your-api-key"
+    mail.mandrill.subaccount = "optional default subaccount"
 
 ### Sending Mails Using Mandrill
 

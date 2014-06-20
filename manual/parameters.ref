@@ -1,1 +1,2 @@
 mail.mandrill.apikey          API key of your Mandrill account
+mail.mandrill.subaccount      Default subaccount for the mails sent with the Mandrill transport

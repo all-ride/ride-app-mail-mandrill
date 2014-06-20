@@ -25,6 +25,18 @@
                     ]
                 },
                 {
+                    "method": "setSubaccount",
+                    "arguments": [
+                        {
+                            "name": "subaccount",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mail.mandrill.subaccount"
+                            }
+                        }
+                    ]
+                },
+                {
                     "method": "setDefaultFrom",
                     "arguments": [
                         {
